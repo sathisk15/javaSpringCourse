@@ -1,7 +1,7 @@
 package com.sk.store;
 
-import com.sk.store.exercise2.User;
-import com.sk.store.exercise2.UserService;
+//import com.sk.store.exercise2.User;
+//import com.sk.store.exercise2.UserService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
