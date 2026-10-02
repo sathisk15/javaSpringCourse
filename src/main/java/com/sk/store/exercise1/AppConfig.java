@@ -1,9 +1,8 @@
-package com.sk.store;
+package com.sk.store.exercise1;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.annotation.Order;
 
 @Configuration
 public class AppConfig {

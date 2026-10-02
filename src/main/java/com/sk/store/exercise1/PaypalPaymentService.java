@@ -1,6 +1,4 @@
-package com.sk.store;
-
-import org.springframework.stereotype.Service;
+package com.sk.store.exercise1;
 
 //@Service("paypal")
 public class PaypalPaymentService implements PaymentService{

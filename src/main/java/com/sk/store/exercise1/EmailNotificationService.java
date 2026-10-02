@@ -1,4 +1,4 @@
-package com.sk.store;
+package com.sk.store.exercise1;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;

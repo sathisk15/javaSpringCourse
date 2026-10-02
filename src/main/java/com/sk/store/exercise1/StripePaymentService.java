@@ -1,10 +1,7 @@
-package com.sk.store;
+package com.sk.store.exercise1;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Service;
 
-import java.awt.*;
 import java.util.List;
 
 //@Service("stripe")

@@ -1,8 +1,4 @@
-package com.sk.store;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Service;
+package com.sk.store.exercise1;
 
 //@Service
 public class OrderService {
