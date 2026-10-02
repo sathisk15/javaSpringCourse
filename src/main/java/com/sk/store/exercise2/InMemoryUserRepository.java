@@ -1,0 +1,15 @@
+package com.sk.store.exercise2;
+
+import org.springframework.stereotype.Repository;
+
+import java.util.HashMap;
+import java.util.Map;
+@Repository
+public class InMemoryUserRepository implements UserRepository{
+    Map<String, User> users = new HashMap<>();
+    @Override
+    public void save(User user){
+        System.out.println("Saving user: "+ user);
+        users.put(user.getEmail(), user);
+    }
+}
