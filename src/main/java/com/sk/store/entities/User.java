@@ -37,10 +37,23 @@ public class User {
     private List<Addresses> addresses = new ArrayList<>();
 
     @ManyToMany
+    @JoinTable(
+            name = "user_tags",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "tag_id")
+    )
+    @Builder.Default
     private Set<Tags> tags = new HashSet<>();
 
     public void addAddress(Addresses address){
         addresses.add(address);
         address.setUser(this);
+    }
+
+
+    public void addTag(String tagName){
+        var tag = new Tags(tagName);
+        tag.getUsers().add(this);
+        this.tags.add(tag);
     }
 }
