@@ -3,6 +3,7 @@ package com.sk.store;
 //import com.sk.store.exercise2.User;
 //import com.sk.store.exercise2.UserService;
 import com.sk.store.entities.Addresses;
+import com.sk.store.entities.Profiles;
 import com.sk.store.entities.Tags;
 import com.sk.store.entities.User;
 import org.springframework.context.ApplicationContext;
@@ -17,7 +18,10 @@ public class StoreApplication {
 
 		var user = User.builder().name("John").password("Pass").email("john@gmail.com").build();
 
-		user.addTag("Tag1");
+		var profile =  Profiles.builder().bio("Bio").build();
+
+		user.setProfile(profile);
+		profile.setUser(user);
 
 		System.out.println(user);
 

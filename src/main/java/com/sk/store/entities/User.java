@@ -50,10 +50,11 @@ public class User {
         address.setUser(this);
     }
 
-
     public void addTag(String tagName){
         var tag = new Tags(tagName);
         tag.getUsers().add(this);
         this.tags.add(tag);
     }
+    @OneToOne(mappedBy = "user")
+    private Profiles profile;
 }
